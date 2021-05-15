@@ -3,3 +3,29 @@
     margin: 0;
     padding: 0;
 }
+
+.App{
+    height: 100vh;
+    
+    .sections{
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: lightcoral;
+        position: relative;
+        top: 80px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        >*{
+            // width: 100vw;
+            height: calc(100vh - 80px);
+            scroll-snap-align: start;
+
+         
+        }
+    }
+}
