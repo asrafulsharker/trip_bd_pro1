@@ -1,5 +1,5 @@
 .NavbarItems{
-    background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73,63,252,1)100%);
+    background: white;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -8,15 +8,16 @@
 }
 
 .navbar-logo{
-    color: #fff;
+    // color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
+    height: 37px;
 }
 
 .nav-menu{
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(9, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -26,19 +27,24 @@
 }
 
 .nav-links{
-    color: #fff ;
+    color: #B8BECD ;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    border: 1px solid #fff;
 }
 
 .nav-links:hover{
-    background-color: #6d76f7;
+    // font-weight: bold;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    width: 100%;
+ 
+        background-color: #fff;
+        color: #202336;
 }
 
 .fa-bars{
-    color: #fff;
+    color: #FB8F1D;
 }
 
 .nav-links-mobile{
@@ -48,4 +54,113 @@
 .menu-icon{
     display: none;
 }
+.signin{
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #FB8F1D;
+    border: 1px solid #FB8F1D;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 15px;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        border: 1px solid #FB8F1D; 
+        background: #FB8F1D;
+    }
+}
+.signup{
+    padding: 8px 20px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid #FB8F1D;
+    margin-right: 15px;
+    cursor: pointer;
+    &:hover{
+        background-color: #fff;
+        color: #FB8F1D;
+        border: 1px solid #FB8F1D;
+    }
+}
 
+@media screen and (max-width: 1160px){
+    .NavbarItems{
+        position: relative;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 630px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background-color: #fff;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        // background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25% , 50%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times{
+        color: #FB8F1D;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        margin: .5rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background-color: #FB8F1D;
+        text-decoration: none;
+        color:#fff;
+        font-size: 1.5rem;
+    }
+    .nav-links-mobile:hover{
+        background-color: #fff;
+        color: #6668f4;
+        transition: 250ms;
+    }
+    Button{
+        display: none;
+    }
+}
