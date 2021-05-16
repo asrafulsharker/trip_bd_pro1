@@ -25,13 +25,13 @@ export default function Hero() {
                 <i class="fas fa-search-location search-btn"></i>
             </div>
             <div className="home1">
-            <div className="left">
+            <div className="leftH">
                 <div className="wrapper">
                     <h1>Keep Planning</h1>
                     <h2>Explore and <span ref={textRef}></span></h2>
                 </div>
             </div>
-            <div className="right">
+            <div className="rightH">
                 <div className="imageContainer">
                     <img src={HeroImg1} alt="heroimg"/>
                 </div>
