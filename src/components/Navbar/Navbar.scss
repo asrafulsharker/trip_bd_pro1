@@ -28,18 +28,19 @@
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
+    overflow: hidden;
 }
 
 .nav-links{
     color: #B8BECD ;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 1px solid #fff;
+    padding: 0rem 1rem;
+    // border: 1px solid #fff;
 }
 
 .nav-links:hover{
     // font-weight: bold;
-    border-radius: 4px;
+    // border-radius: 4px;
     transition: all 0.2s ease-out;
     width: 100%;
  
