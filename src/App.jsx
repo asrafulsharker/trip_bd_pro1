@@ -21,8 +21,8 @@ function App() {
           <Testimonials/>
           <Trending/>
           <Contact/>
-          <Footer/>
         </div>
+        
     </div>
   );
 }

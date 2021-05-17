@@ -1,3 +1,107 @@
 .footer{
-    background-color: aquamarine;
+    background-color: #F9F9FB;
+    padding:2% 5%;
+    overflow: hidden;
+}
+.footerTop{
+    display: flex;
+    .leftFo{
+        flex: 0.4;
+        padding-right: 3%;
+        padding-top: 12px;
+
+        img{
+            height: 40px;
+        }
+        .palanF{
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+            color: #848484;
+            padding-top: 12px;
+        }
+        .footerCredit{
+            padding-top: 67px;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+            /* or 156% */
+            color: #848484;
+        }
+    }
+    .rightFo{
+        flex: 0.6;
+        display: flex;
+        padding: 0% 0% 0% 5%;
+
+
+        .mid1F{
+            flex: .3;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            
+            /* or 211% */
+            
+            color: #848484;
+        }
+        .mid2F{
+            flex: .3;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+
+            /* or 211% */
+
+            color: #848484;
+        }
+        .mid3F{
+            flex: .3;
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+
+            /* or 211% */
+
+            color: #848484;
+        }
+        .midH1{
+            font-family: Mulish;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 60px;
+
+            /* identical to box height, or 316% */
+
+            color: #000000;
+        }
+    }
+}
+
+.footerDown{
+    display: flex;
+    // background-color: red;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    a{
+        i{
+            padding: 0px 10px;
+            font-size: 20px;
+            color: #000000;
+        }
+    }
 }
