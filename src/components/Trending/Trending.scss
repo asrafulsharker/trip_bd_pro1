@@ -1,3 +1,74 @@
 .trending{
-    background-color: rgb(95, 99, 160);
+    background-color: rgb(255, 255, 255);
+   
+}
+.topTrending{
+    display: flex;
+    display: flex;
+    padding: 30px 5px;
+}
+.leftT{
+    flex:.5;
+    text-align: left;
+    padding-left: 6%;
+}
+.rightT{
+    flex:.5;
+    // justify-content: flex-end;
+    text-align: right;
+    padding-right: 6%;
+    color: #FB8F1D;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    a{
+        color: #FB8F1D;
+        margin-right: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+.TrendingImgDiv{
+    position: relative;
+    margin-left: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-top:20px;
+}
+.TrendingImg{
+    
+    height: 233px;
+    width: 352px;
+}
+
+.TImgDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 0px 3%;
+}
+
+.TrendingDec{
+    width: 352px;
+    h4{
+        font-weight: bold;
+        line-height: 30px;
+        font-size: 19px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 26px;
+        color: #7d7987;
+    }
+
+    a{
+        color: #FB8F1D;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
 }
