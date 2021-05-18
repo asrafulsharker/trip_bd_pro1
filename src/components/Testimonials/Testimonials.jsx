@@ -13,6 +13,7 @@ export default function Testimonials() {
     }
     return (
         <div className="testimonials" id="testimonials">
+            <h1 className="testimonialsH1">Testimonials</h1>
             <div
                 className="slider"
                 style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
@@ -23,27 +24,26 @@ export default function Testimonials() {
                     <div className="left">
                         <div className="leftContainer">
                         <div className="imgContainer">
-                            {/* <img src={d.icon} alt="" /> */}
                         </div>
                         <p>{d.description}</p>
                         <h2>{d.name}</h2>
                         <p>{d.position}</p>
-                        <span>Projects</span>
                         </div>
                     </div>
                     <div className="right">
-                        <img style={{height:"200px"}}
+                        <img 
                         src={d.image}
                         alt=""
                         />
-                      
+                        <div className="arrowDiv">
+                            <i onClick={() => handleClick("left")}  class="fas fa-chevron-left arrow left"></i>
+                            <i class="fas fa-chevron-right arrow right" onClick={() => handleClick()}></i>
+                        </div>
                     </div>
                     </div>
                 </div>
                 ))}
             </div>
-                <i onClick={() => handleClick("left")}  class="fas fa-chevron-left arrow left"></i>
-                <i class="fas fa-chevron-right arrow right" onClick={() => handleClick()}></i>
                
         </div>
     )

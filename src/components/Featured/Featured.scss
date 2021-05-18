@@ -1,5 +1,5 @@
 .featured{
-    background-color: white;
+    background-color: azure;
 }
 .topFeatured{
     display: flex;
@@ -48,8 +48,20 @@
 .featuredSmDiv{
     position: absolute;
     z-index: 9;
-    background-color: white;
-    margin-top: -70px;
+    background-color: azure;
+    margin-top: -62px;
     border-top-right-radius: 10px;
     padding: 5px;
+
+    h1{
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 24px;
+        color: #80918E;
+    }
 }
