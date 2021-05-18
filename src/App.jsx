@@ -9,6 +9,7 @@ import Trending from './components/Trending/Trending';
 import Guides from './components/Guides/Guides';
 import Explore from './components/Explore/Explore';
 import Contact from './components/Contact/Contact'
+import Auth from './components/Auth/Auth1';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,7 @@ function App() {
           <Testimonials/>
           <Trending/>
           <Contact/>
+          <Auth/>
         </div>
         
     </div>

@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component ,useState} from 'react';
 import {MenuItems} from './MenuItems';
 import {Button} from './Button';
+import auth from '../Auth/Auth1';
 import './Navbar.scss'
 import Logo from '../../images/logo.png';
 class Navbar extends React.Component{
@@ -29,7 +30,7 @@ class Navbar extends React.Component{
                         )
                     })}
                 </ul>
-                <button className="signin">Sign In</button>
+                <button className="signin" ><a href="#auth">Sign In</a></button>
                 <button className="signup">Sign Up</button>
             </nav>
         )
